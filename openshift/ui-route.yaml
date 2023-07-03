@@ -9,7 +9,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: bee-travels-bee-travels.$(HOSTNAME)
+  host: bee-travels-bee-travels.{{ .HOSTNAME }}
   to:
     kind: Service
     name: ui
