@@ -9,7 +9,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: bee-travels-bee-travels.$(Ingress_domain)
+  host: bee-travels-bee-travels.$(oc get ingresses.config/cluster -o jsonpath={.spec.domain})
   to:
     kind: Service
     name: ui
