@@ -13,8 +13,8 @@ spec:
     - name: DOMAIN
       valueFrom:
         configMapKeyRef:
-          key: domain
           name: cluster-domain
+          key: domain
   host: bee-travels-bee-travels.$(DOMAIN)
   to:
     kind: Service
