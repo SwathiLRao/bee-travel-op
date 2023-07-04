@@ -9,7 +9,6 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec: 
-  host: bee-travels-bee-travels.$(HOTEL_URL)
   to:
     kind: Service
     name: ui
