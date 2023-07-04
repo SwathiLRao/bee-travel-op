@@ -9,7 +9,8 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: bee-travels-bee-travels.$(domain)
+  {{ if app.kubernetes.io/instance}}: bee-travels-test-cluster
+  host: bee-travels-bee-travels.123
   to:
     kind: Service
     name: ui
