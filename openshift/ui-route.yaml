@@ -8,8 +8,14 @@ metadata:
     app.kubernetes.io/instance: bee-travels
   annotations:
     openshift.io/host.generated: 'true'
-spec:
-  host: bee-travels-bee-travels.apps.cluster-krcc2.krcc2.sandbox3015.opentlc.com
+spec: 
+  env:
+    - name: DOMAIN
+      valueFrom:
+        configMapKeyRef:
+          key: domain
+          name: cluster-domain
+  host: bee-travels-bee-travels.$(DOMAIN)
   to:
     kind: Service
     name: ui
