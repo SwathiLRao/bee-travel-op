@@ -9,7 +9,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: bee-travels-bee-travels.123
+  host: bee-travels-bee-travels.ingresses.config/cluster
   to:
     kind: Service
     name: ui
