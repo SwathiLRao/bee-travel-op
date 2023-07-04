@@ -9,7 +9,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: bee-travels-bee-travels.appsDomain
+  host: bee-travels-bee-travels.apps.cluster-krcc2.krcc2.sandbox3015.opentlc.com
   to:
     kind: Service
     name: ui
