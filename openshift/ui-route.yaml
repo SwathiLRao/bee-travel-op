@@ -9,12 +9,13 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec: 
-  env:
-    - name: DOMAIN
-      valueFrom:
-        configMapKeyRef:
-          name: cluster-domain
-          key: domain
+  containers: 
+    env:
+      - name: DOMAIN
+        valueFrom:
+          configMapKeyRef:
+            name: cluster-domain
+            key: domain
   host: bee-travels-bee-travels.$(DOMAIN)
   to:
     kind: Service
