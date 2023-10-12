@@ -52,10 +52,10 @@ spec:
               value: http
           resources:
             limits:
-              cpu: 100m
+              cpu: 1000m
               memory: 256Mi
             requests:
-              cpu: 100m
+              cpu: 1000m
               memory: 256Mi
           imagePullPolicy: Always
       restartPolicy: Always
