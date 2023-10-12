@@ -53,10 +53,10 @@ spec:
           resources:
             limits:
               cpu: 1000m
-              memory: 5120Mi
+              memory: 8192Mi
             requests:
               cpu: 1000m
-              memory: 5120Mi
+              memory: 8192Mi
           imagePullPolicy: Always
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
