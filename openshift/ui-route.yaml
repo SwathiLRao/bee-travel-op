@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: bee-travels
-  namespace: bee-travels
+  namespace: bee-travels-op
   labels:
     app: ui
     app.kubernetes.io/instance: bee-travels
