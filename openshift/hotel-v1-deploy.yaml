@@ -28,7 +28,6 @@ spec:
   revisionHistoryLimit: 10
   selector:
     app: hotel-v1
-    deploymentconfig: hotel-v1
   template:
     metadata:
       labels:
