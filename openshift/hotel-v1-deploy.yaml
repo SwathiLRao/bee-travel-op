@@ -33,7 +33,6 @@ spec:
     metadata:
       labels:
         app: hotel-v1
-        deploymentconfig: hotel-v1
     spec:
       containers:
         - name: hotel-v1
