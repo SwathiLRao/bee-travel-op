@@ -58,11 +58,11 @@ spec:
               value: '9000'
           resources:
             limits:
-              cpu: 200m
-              memory: 256Mi
+              cpu: 400m
+              memory: 500Mi
             requests:
-              cpu: 200m
-              memory: 256Mi
+              cpu: 400m
+              memory: 500Mi
           imagePullPolicy: Always
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
