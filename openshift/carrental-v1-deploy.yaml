@@ -28,7 +28,6 @@ spec:
   revisionHistoryLimit: 10
   selector:
     app: carrental-v1
-    deploymentconfig: carrental-v1
   template:
     metadata:
       labels:
