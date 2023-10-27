@@ -32,7 +32,6 @@ spec:
     metadata:
       labels:
         app: destination-v1
-        deploymentconfig: destination-v1
     spec:
       containers:
         - name: destination-v1
