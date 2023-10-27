@@ -33,7 +33,6 @@ spec:
     metadata:
       labels:
         app: carrental-v1
-        deploymentconfig: carrental-v1
     spec:
       containers:
         - name: carrental-v1
