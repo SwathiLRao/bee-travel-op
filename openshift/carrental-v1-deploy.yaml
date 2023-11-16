@@ -52,7 +52,7 @@ spec:
               value: http
           resources:
             limits:
-              cpu: 200mm
+              cpu: 200m
               memory: 256Mi
             requests:
               cpu: 200m
